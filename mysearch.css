@@ -1,0 +1,55 @@
+body,
+select,
+input,
+button {
+    font-family: "Microsoft YaHei";
+}
+
+input {
+    width: 450px;
+    height: 40px;
+    font-size: 20px;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button {
+    height: 40px;
+    font-size: 20px;
+    color: #FFF;
+    background: #0080FF;
+    border: 1px solid #0080FF;
+    cursor: pointer;
+    vertical-align: top;
+    outline: none;
+}
+
+select {
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    background: #FFFFFF;
+    border-left: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    cursor: pointer;
+    vertical-align: top;
+    outline: none;
+}
+
+body{
+    background:#ecedf0 url("http://area.sinaapp.com/bingImg/") fixed;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+/* .search{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+} */

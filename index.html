@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Search</title>
+    <link rel="icon" type="image/x-icon" href="search.ico" />
+    <link type="text/css" rel="stylesheet" href="mysearch.css" />
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="mysearch.js"></script>
+</head>
+
+
+<body id="mybody">
+    <div align="center">
+        <br><br><br><img src='sou_what_white.png' height="250px" width="700px"><br>
+        <form action="https://www.baidu.com/s" target="_blank" id="f1" style="display:inline;">
+            <select id="web" onchange="web_selecter()">
+                <option value="https://www.baidu.com/s$wd$当前百度搜索$y">百度搜索</option>
+                <option value="https://www.google.com/search$q$当前谷歌搜索，需要科学上网$y">谷歌搜索</option>
+                <option value="https://cn.bing.com/search$q$当前必应搜索$y">必应搜索</option>
+                <option value="https://mijisou.com/$q$当前秘迹搜索$y">秘迹搜索</option>
+                <option value="https://www.sogou.com/web$query$当前搜狗搜索$y">搜狗搜索</option>
+                <option value="https://www.so.com/s$q$当前360搜索$y">360搜索</option>
+                <option value="https://s.weibo.com/weibo$q$当前微博搜索$y">微博搜索</option>
+                <option value="http://www.chinaso.com/search/pagesearch.htm$q$当前中国搜索$y">中国搜索</option>
+            </select><input id="search" type="text" name="wd" baiduSug=2 autocomplete="off" placeholder="默认百度搜索"><button
+                type="button" id="button" onclick="gobutton()">开始搜索</button>
+        </form>
+    </div>
+</body>
+<!-- 百度搜索框提示 -->
+<script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script>
+
+</html>
