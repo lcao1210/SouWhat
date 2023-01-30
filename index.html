@@ -6,12 +6,48 @@
     <title>My Search</title>
     <link rel="icon" type="image/x-icon" href="search.ico" />
     <link type="text/css" rel="stylesheet" href="mysearch.css" />
+    <style>
+        /*这里修改提示框的字体样式*/
+        .bdSug_wpr {
+            color: black;
+        }
+    </style>
     <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
     <script src="mysearch.js"></script>
 </head>
 
 
 <body id="mybody">
+
+    <div id="he-plugin-simple"></div>
+    <script>
+        WIDGET = {
+            "CONFIG": {
+                "modules": "01234",
+                "background": "5",
+                "tmpColor": "FFFFFF",
+                "tmpSize": "16",
+                "cityColor": "FFFFFF",
+                "citySize": "16",
+                "aqiColor": "FFFFFF",
+                "aqiSize": "16",
+                "weatherIconSize": "24",
+                "alertIconSize": "18",
+                "padding": "10px 10px 10px 10px",
+                "shadow": "0",
+                "language": "auto",
+                "borderRadius": "5",
+                "fixed": "true",
+                "vertical": "left",
+                "horizontal": "left",
+                "left": "10",
+                "top": "10",
+                "key": "87601cfe3b594cb488d75a878b077eec"
+            }
+        }
+    </script>
+    <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+
     <div align="center">
         <br><br><br><img src='sou_what_white.png' height="250px" width="700px"><br>
         <form action="https://www.baidu.com/s" target="_blank" id="f1" style="display:inline;">
@@ -22,11 +58,24 @@
                 <option value="https://www.sogou.com/web$query$当前搜狗搜索$y">搜狗搜索</option>
                 <option value="https://s.weibo.com/weibo$q$当前微博搜索$y">微博搜索</option>
             </select><input id="search" type="text" name="wd" baiduSug=2 autocomplete="off" placeholder="默认百度搜索"><button
-                type="button" id="button" onclick="gobutton()">开始搜索</button>
+                type="button" id="button" onclick="gobutton()">搜索</button>
         </form>
     </div>
 </body>
 <!-- 百度搜索框提示 -->
-<script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script>
+<script charset="gbk" src="opensug.js"></script>
+
+<!-- 随机彩色背景图片
+<script>
+    function get_random_picture() {
+        max = 1
+        min = 1
+        var rand = Math.floor(Math.random() * (max - min + 1)) + min
+        return "./background/b" + rand + ".jpg"
+    }
+    var newSrc = get_random_picture()
+    var myImg = document.querySelector('#mybody')
+    myImg.setAttribute('background', newSrc)
+</script> -->
 
 </html>
